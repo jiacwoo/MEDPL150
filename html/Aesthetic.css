@@ -5,3 +5,9 @@
     padding-bottom: 15px;
     padding-left: 15px;
 }
+
+.image-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
