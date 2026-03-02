@@ -17,3 +17,7 @@
 	align-items: flex-start;
 	gap: 20px;
 }
+
+.pic-next p {
+	max-width: 400px;
+}
