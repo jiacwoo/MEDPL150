@@ -11,3 +11,9 @@
     gap: 10px;
     align-items: center;
 }
+
+.pic-next {
+    display: flex;
+	align-items: flex-start;
+	gap: 20px;
+}
