@@ -69,7 +69,8 @@ body {
 
 #choices {
   position: fixed;
-  text-align: left;
+  bottom: 150px;
+  
 }
 
 #choice_1 {
