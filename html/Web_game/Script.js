@@ -6,7 +6,6 @@ const dialogue = [
 ];
 
 let index = 0;
-
 const text = document.getElementById("text");
 
 function nextLine() {
