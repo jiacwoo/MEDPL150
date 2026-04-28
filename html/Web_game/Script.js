@@ -15,3 +15,12 @@ function nextLine() {
 }
 
 document.addEventListener("click", nextLine);
+
+document.getElementById("backBtn").onclick = function(e) {
+  e.stopPropagation(); // prevents triggering next dialogue
+
+  if (index > 0) {
+    index--;
+    document.getElementById("text").innerText = dialogue[index];
+  }
+};
