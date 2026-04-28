@@ -25,6 +25,20 @@ body {
   margin-bottom: 10px;
 }
 
+#textbox {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.75);
+  padding: 25px;
+
+  color: white;
+  font-size: 28px;
+  font-family: Georgia, serif;
+}
+
 #Button_1 {
   position: fixed;
   bottom: 10px;
