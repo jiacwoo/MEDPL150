@@ -1,5 +1,4 @@
 const dialogue = [
-  "You wake up in a dark room...",
   "Your head hurts.",
   "You hear something breathing nearby...",
   "..."
