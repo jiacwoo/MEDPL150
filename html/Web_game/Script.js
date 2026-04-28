@@ -17,7 +17,7 @@ function nextLine() {
     document.getElementById("choice_2").style.display = "block";
     document.getElementById("choice_3").style.display = "block";
   }
-  else if (index > 2) {
+  else if (index < 2) {
     document.getElementById("choice_1").style.display = "none";
     document.getElementById("choice_2").style.display = "none";
     document.getElementById("choice_3").style.display = "none";
