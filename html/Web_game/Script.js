@@ -6,13 +6,13 @@ const dialogue = [
   "..."
 ];
 
+document.addEventListener("click", nextLine);
 function nextLine() {
   if (index < dialogue.length - 1) {
     index++;
     text.innerText = dialogue[index];
   }
 }
-document.addEventListener("click", nextLine);
 
 document.getElementById("back").onclick = function(e) {
   e.stopPropagation();
@@ -21,3 +21,7 @@ document.getElementById("back").onclick = function(e) {
     document.getElementById("text").innerText = dialogue[index];
   }
 };
+
+if (index == 2) {
+
+}
