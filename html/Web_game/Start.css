@@ -19,10 +19,6 @@ body {
   }
 }
 
-#textbox {
-  opacity: 0;
-}
-
 @keyframes textFade {
   to {
     opacity: 1;
@@ -30,6 +26,8 @@ body {
 }
 
 #textbox {
+  opacity: 0;
+  animation: textFade 5s forwards;
   position: fixed;
   bottom: 120px;
   width: 100%;
