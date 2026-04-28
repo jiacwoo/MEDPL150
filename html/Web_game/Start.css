@@ -74,7 +74,7 @@ body {
 }
 
 #choice_1 {
-  display: block;
+  display: none;
   margin: 20px;
   padding: 15px 30px;
   width: fit-content;
@@ -88,7 +88,7 @@ body {
 }
 
 #choice_2 {
-  display: block;
+  display: none;
   margin: 20px;
   padding: 15px 30px;
   width: fit-content;
@@ -102,7 +102,7 @@ body {
 }
 
 #choice_3 {
-  display: block;
+  display: none;
   margin: 20px;
   padding: 15px 30px;
   width: fit-content;
