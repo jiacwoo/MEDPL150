@@ -69,7 +69,7 @@ body {
 
 #choices {
   position: fixed;
-  top: 200px;
+  vertical-align: middle;
   right: 40px;
 }
 
