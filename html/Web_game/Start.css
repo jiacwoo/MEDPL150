@@ -71,7 +71,6 @@ body {
   position: fixed;
   top: 200px;
   right: 40px;
-  background-color: darkgray;
 }
 
 #choice_1 {
@@ -81,7 +80,7 @@ body {
   width: fit-content;
   font-weight: bold;
   text-decoration: none;
-  background-color: gray;
+  background-color: darkgray;
   color: white;
   font-family: "Georgia", serif;
   font-size: 30px;
