@@ -52,18 +52,17 @@ body {
   bottom: 10px;
   width: 100%;
   text-align: center;
-  margin: 0 10px;
 }
 
 #Button_1 {
   font-size: 12px;
   color: white;
   text-decoration: none;
-
+  margin: 0 10px;
 }
 
 #back {
   font-size: 12px;
   color: white;
-
+  margin: 0 10px;
 }
