@@ -19,6 +19,12 @@ body {
   }
 }
 
+#speaker {
+  font-size: 18px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
 #Button_1 {
   position: fixed;
   bottom: 10px;
