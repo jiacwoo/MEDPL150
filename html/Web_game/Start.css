@@ -20,6 +20,16 @@ body {
 }
 
 #textbox {
+  opacity: 0;
+}
+
+@keyframes textFade {
+  to {
+    opacity: 1;
+  }
+}
+
+#textbox {
   position: fixed;
   bottom: 120px;
   width: 100%;
