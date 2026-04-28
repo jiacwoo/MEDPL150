@@ -7,3 +7,23 @@ body {
   color: white;
   font-family: "Georgia", serif;
 }
+
+#playButton {
+  display: block;
+  margin: 40px auto;
+  padding: 15px 30px;
+  width: fit-content;
+
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  font-family: Arial;
+  font-size: 20px;
+
+  border-radius: 8px;
+  text-align: center;
+}
+
+#playButton:hover {
+  background-color: #333;
+}
