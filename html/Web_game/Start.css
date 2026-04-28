@@ -69,12 +69,13 @@ body {
 
 #choices {
   position: fixed;
-  bottom: 150px;
-  
+  bottom: 200px;
+  left: 40px;
 }
 
 #choice_1 {
   display: block;
+  background-color: #383838;
   margin: 20px;
   padding: 15px 30px;
   width: fit-content;
