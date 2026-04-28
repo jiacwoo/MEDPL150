@@ -10,7 +10,7 @@ body {
 
 #playButton {
   display: block;
-  margin: 40px auto;
+  margin: 40px;
   padding: 15px 30px;
   width: fit-content;
 
