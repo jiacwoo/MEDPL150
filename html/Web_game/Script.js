@@ -32,7 +32,8 @@ document.getElementById("back").onclick = function(e) {
   }
 };
 
-document.getElementById("choice_1").onclick = function() {
+document.getElementById("choice_1").onclick = function(e) {
+  e.stopPropagation();
   index = 0;
   dialogue = [
     "aaa",
@@ -40,6 +41,7 @@ document.getElementById("choice_1").onclick = function() {
     "vbasfdas.",
     "adasd",
   ];
+  document.getElementById("text").innerText = dialogue[index];
 };
 
 document.getElementById("choice_2").onclick = function(e) {
@@ -55,6 +57,7 @@ document.getElementById("choice_2").onclick = function(e) {
 };
 
 document.getElementById("choice_3").onclick = function() {
+  e.stopPropagation();
   index = 0;
   dialogue = [
     "amongs",
@@ -62,4 +65,5 @@ document.getElementById("choice_3").onclick = function() {
     "dasdascxzxx.",
     "aaaaaa",
   ];
+  document.getElementById("text").innerText = dialogue[index];
 };
