@@ -1,6 +1,6 @@
 let index = 0;
 const text = document.getElementById("text");
-const dialogue = [
+let dialogue = [
   "Your head hurts.",
   "You hear something breathing nearby...",
   "..."
@@ -12,7 +12,7 @@ function nextLine() {
     index++;
     text.innerText = dialogue[index];
   }
-  if (index == 2) {
+  if (index == dialogue.length) {
     document.getElementById("choice_1").style.display = "block";
     document.getElementById("choice_2").style.display = "block";
     document.getElementById("choice_3").style.display = "block";
@@ -25,9 +25,39 @@ document.getElementById("back").onclick = function(e) {
     index--;
     document.getElementById("text").innerText = dialogue[index];
   }
-  if (index < 2) {
+  if (index < dialogue.length) {
     document.getElementById("choice_1").style.display = "none";
     document.getElementById("choice_2").style.display = "none";
     document.getElementById("choice_3").style.display = "none";
   }
+};
+
+document.getElementById("choice_1").onclick = function() {
+  index = 0;
+  dialogue = [
+    "aaa",
+    "Yatha...",
+    "vbasfdas."
+    "adasd"
+  ];
+};
+
+document.getElementById("choice_2").onclick = function() {
+  index = 0;
+  dialogue = [
+    "apple",
+    "cheese",
+    "dorito."
+    "banana"
+  ];
+};
+
+document.getElementById("choice_3").onclick = function() {
+  index = 0;
+  dialogue = [
+    "amongs",
+    "sus",
+    "dasdascxzxx."
+    "aaaaaa"
+  ];
 };
