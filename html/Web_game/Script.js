@@ -32,8 +32,7 @@ document.getElementById("back").onclick = function(e) {
   }
 };
 
-document.getElementById("choice_1").onclick = function(e) {
-  e.stopPropagation();
+document.getElementById("choice_1").onclick = function() {
   index = 0;
   dialogue = [
     "aaa",
@@ -43,8 +42,7 @@ document.getElementById("choice_1").onclick = function(e) {
   ];
 };
 
-document.getElementById("choice_2").onclick = function(e) {
-  e.stopPropagation();
+document.getElementById("choice_2").onclick = function() {
   index = 0;
   dialogue = [
     "apple",
@@ -52,10 +50,10 @@ document.getElementById("choice_2").onclick = function(e) {
     "dorito.",
     "banana",
   ];
+  document.getElementById("text").innerText = dialogue[index];
 };
 
-document.getElementById("choice_3").onclick = function(e) {
-  e.stopPropagation();
+document.getElementById("choice_3").onclick = function() {
   index = 0;
   dialogue = [
     "amongs",
