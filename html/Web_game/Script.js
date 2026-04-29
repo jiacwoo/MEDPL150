@@ -50,6 +50,9 @@ if (index2 == 0) {
     document.getElementById("choice_2").style.display = "none";
     document.getElementById("choice_3").style.display = "none";
     index2 = 1;
+    document.getElementById("choice_1").innerText = "go to hotel";
+    document.getElementById("choice_2").innerText = "go home together";
+    document.getElementById("choice_3").innerText = "say goodbye to him";
   };
   
   document.getElementById("choice_2").onclick = function(e) {
@@ -65,6 +68,9 @@ if (index2 == 0) {
     document.getElementById("choice_2").style.display = "none";
     document.getElementById("choice_3").style.display = "none";
     index2 = 2;
+    document.getElementById("choice_1").innerText = "go back out and find him";
+    document.getElementById("choice_2").innerText = "call your friend jonathan";
+    document.getElementById("choice_3").innerText = "buy alchohol";
   };
   
   document.getElementById("choice_3").onclick = function(e) {
@@ -79,15 +85,15 @@ if (index2 == 0) {
     document.getElementById("choice_2").style.display = "none";
     document.getElementById("choice_3").style.display = "none";
     index2 = 3;
+    document.getElementById("choice_1").innerText = "knife";
+    document.getElementById("choice_2").innerText = "gun";
+    document.getElementById("choice_3").innerText = "bomb";
   };
 }
 /*
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 */
 else if (index2 == 1) {
-  document.getElementById("choice_1").innerText = "go to hotel";
-  document.getElementById("choice_2").innerText = "go home together";
-  document.getElementById("choice_3").innerText = "say goodbye to him";
   document.addEventListener("click", nextLine);
   function nextLine() {
     if (index < dialogue.length - 1) {
@@ -158,9 +164,6 @@ else if (index2 == 1) {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 */
 else if (index2 == 2) {
-  document.getElementById("choice_1").innerText = "go back out and find him";
-  document.getElementById("choice_2").innerText = "call your friend jonathan";
-  document.getElementById("choice_3").innerText = "buy alchohol";
   document.addEventListener("click", nextLine);
   function nextLine() {
     if (index < dialogue.length - 1) {
@@ -234,9 +237,6 @@ else if (index2 == 2) {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 */
 else if (index2 == 3) {
-  document.getElementById("choice_1").innerText = "knife";
-  document.getElementById("choice_2").innerText = "gun";
-  document.getElementById("choice_3").innerText = "bomb";
   document.addEventListener("click", nextLine);
   function nextLine() {
     if (index < dialogue.length - 1) {
