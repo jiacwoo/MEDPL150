@@ -42,7 +42,8 @@ document.getElementById("choice_1").onclick = function() {
   ];
 };
 
-document.getElementById("choice_2").onclick = function() {
+document.getElementById("choice_2").onclick = function(e) {
+  e.stopPropagation();
   index = 0;
   dialogue = [
     "apple",
