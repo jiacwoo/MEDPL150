@@ -57,6 +57,9 @@ document.getElementById("choice_2").onclick = function(e) {
     "banana",
   ];
   document.getElementById("text").innerText = dialogue[index];
+  document.getElementById("choice_1").style.display = "none";
+  document.getElementById("choice_2").style.display = "none";
+  document.getElementById("choice_3").style.display = "none";
 };
 
 document.getElementById("choice_3").onclick = function(e) {
@@ -69,4 +72,7 @@ document.getElementById("choice_3").onclick = function(e) {
     "aaaaaa",
   ];
   document.getElementById("text").innerText = dialogue[index];
+  document.getElementById("choice_1").style.display = "none";
+  document.getElementById("choice_2").style.display = "none";
+  document.getElementById("choice_3").style.display = "none";
 };
