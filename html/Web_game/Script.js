@@ -23,12 +23,10 @@ function nextLine() {
     index++;
     text.innerText = dialogue[index];
   }
-  if (index == dialogue.length-1) {
+  if (index == dialogue.length-1 && end == false) {
       document.getElementById("choice_1").style.display = "block";
       document.getElementById("choice_2").style.display = "block";
       document.getElementById("choice_3").style.display = "block";
-    
-  
   }
 };
 
