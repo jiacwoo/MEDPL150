@@ -13,10 +13,10 @@ document.getElementById("choice_2").innerText = "you wuss out";
 document.getElementById("choice_3").innerText = "murder";
 document.addEventListener("click", nextLine);
 function nextLine() {
-  if (index2 == 1 && index == dialogue.length - 1 && end = true) {
+  if (index2 == 1 && index == dialogue.length - 1 && end == true) {
       window.location.assign("ending_1.html");
   }
-  else if ((index2 == 2 || index == 3) && index == dialogue.length - 1 && end = true) {
+  else if ((index2 == 2 || index == 3) && index == dialogue.length - 1 && end == true) {
       window.location.assign("ending_2.html");
   }
   if (index < dialogue.length - 1) {
