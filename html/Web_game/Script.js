@@ -7,190 +7,63 @@ let dialogue = [
   "what do you want to do?",
 ];
 
-if (index2 == 0) {
-  document.getElementById("choice_1").innerText = "you ask him out";
-  document.getElementById("choice_2").innerText = "you wuss out";
-  document.getElementById("choice_3").innerText = "murder";
-  document.addEventListener("click", nextLine);
-  function nextLine() {
-    if (index < dialogue.length - 1) {
-      index++;
-      text.innerText = dialogue[index];
-    }
-    if (index == dialogue.length-1) {
+document.getElementById("choice_1").innerText = "you ask him out";
+document.getElementById("choice_2").innerText = "you wuss out";
+document.getElementById("choice_3").innerText = "murder";
+document.addEventListener("click", nextLine);
+function nextLine() {
+  if (index < dialogue.length - 1) {
+    index++;
+    text.innerText = dialogue[index];
+  }
+  if (index == dialogue.length-1) {
+    if (index2 == 0) {
       document.getElementById("choice_1").style.display = "block";
       document.getElementById("choice_2").style.display = "block";
       document.getElementById("choice_3").style.display = "block";
     }
-  };
-  
-  document.getElementById("back").onclick = function(e) {
-    e.stopPropagation();
-    if (index > 0) {
-      index--;
-      document.getElementById("text").innerText = dialogue[index];
-    }
-    if (index < dialogue.length) {
-      document.getElementById("choice_1").style.display = "none";
-      document.getElementById("choice_2").style.display = "none";
-      document.getElementById("choice_3").style.display = "none";
-    }
-  };
-  
-  document.getElementById("choice_1").onclick = function(e) {
-    e.stopPropagation();
-    index = 0;
+    else if (index2 == 1) window.location.assign("ending_1.html");
+    else if (index2 == 2||index2 == 3) window.location.assign("ending_2.html");
+  }
+};
+
+document.getElementById("back").onclick = function(e) {
+  e.stopPropagation();
+  if (index > 0) {
+    index--;
+    document.getElementById("text").innerText = dialogue[index];
+  }
+  if (index < dialogue.length) {
+    document.getElementById("choice_1").style.display = "none";
+    document.getElementById("choice_2").style.display = "none";
+    document.getElementById("choice_3").style.display = "none";
+  }
+};
+
+document.getElementById("choice_1").onclick = function(e) {
+  e.stopPropagation();
+  index = 0;
+  if (index2 == 0) {
     dialogue = [
       "senpai says yes1",
       "omg",
       "yaaayyyy",
     ];
     document.getElementById("text").innerText = dialogue[index];
-    document.getElementById("choice_1").style.display = "none";
-    document.getElementById("choice_2").style.display = "none";
-    document.getElementById("choice_3").style.display = "none";
     index2 = 1;
     document.getElementById("choice_1").innerText = "go to hotel";
     document.getElementById("choice_2").innerText = "go home together";
     document.getElementById("choice_3").innerText = "say goodbye to him";
-  };
-  
-  document.getElementById("choice_2").onclick = function(e) {
-    e.stopPropagation();
-    index = 0;
-    dialogue = [
-      "you sad",
-      "you run home",
-      "jump in bed and start kicking you feet",
-    ];
-    document.getElementById("text").innerText = dialogue[index];
-    document.getElementById("choice_1").style.display = "none";
-    document.getElementById("choice_2").style.display = "none";
-    document.getElementById("choice_3").style.display = "none";
-    index2 = 2;
-    document.getElementById("choice_1").innerText = "go back out and find him";
-    document.getElementById("choice_2").innerText = "call your friend jonathan";
-    document.getElementById("choice_3").innerText = "buy alchohol";
-  };
-  
-  document.getElementById("choice_3").onclick = function(e) {
-    e.stopPropagation();
-    index = 0;
-    dialogue = [
-      "you think about klling sempai",
-      "how should you do it?",
-    ];
-    document.getElementById("text").innerText = dialogue[index];
-    document.getElementById("choice_1").style.display = "none";
-    document.getElementById("choice_2").style.display = "none";
-    document.getElementById("choice_3").style.display = "none";
-    index2 = 3;
-    document.getElementById("choice_1").innerText = "knife";
-    document.getElementById("choice_2").innerText = "gun";
-    document.getElementById("choice_3").innerText = "bomb";
-  };
-}
-/*
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-*/
-else if (index2 == 1) {
-  document.addEventListener("click", nextLine);
-  function nextLine() {
-    if (index < dialogue.length - 1) {
-      index++;
-      text.innerText = dialogue[index];
-    }
-    if (index == dialogue.length-1) {
-     window.location.assign("ending_1.html");
-    }
-  };
-  
-  document.getElementById("back").onclick = function(e) {
-    e.stopPropagation();
-    if (index > 0) {
-      index--;
-      document.getElementById("text").innerText = dialogue[index];
-    }
-    if (index < dialogue.length) {
-      document.getElementById("choice_1").style.display = "none";
-      document.getElementById("choice_2").style.display = "none";
-      document.getElementById("choice_3").style.display = "none";
-    }
-  };
-  
-  document.getElementById("choice_1").onclick = function(e) {
-    e.stopPropagation();
-    index = 0;
+  }
+  else if (index2 == 1) {
     dialogue = [
       "oh my god its my first time going to a hotel!",
       "im so happy!!!!",
       "eeeeeeeeeeeeee",
     ];
     document.getElementById("text").innerText = dialogue[index];
-    document.getElementById("choice_1").style.display = "none";
-    document.getElementById("choice_2").style.display = "none";
-    document.getElementById("choice_3").style.display = "none";
-  };
-  
-  document.getElementById("choice_2").onclick = function(e) {
-    e.stopPropagation();
-    index = 0;
-    dialogue = [
-      "wow i never knew we lived so close",
-      "can i go inside?",
-      "pwease sempai.",
-    ];
-    document.getElementById("text").innerText = dialogue[index];
-    document.getElementById("choice_1").style.display = "none";
-    document.getElementById("choice_2").style.display = "none";
-    document.getElementById("choice_3").style.display = "none";
-  };
-  
-  document.getElementById("choice_3").onclick = function(e) {
-    e.stopPropagation();
-    index = 0;
-    dialogue = [
-      "awh goodby sempai",
-      "see you tomorow",
-      "(i hope we can get closer).",
-    ];
-    document.getElementById("text").innerText = dialogue[index];
-    document.getElementById("choice_1").style.display = "none";
-    document.getElementById("choice_2").style.display = "none";
-    document.getElementById("choice_3").style.display = "none";
-  };
-}
-/*
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-*/
-else if (index2 == 2) {
-  document.addEventListener("click", nextLine);
-  function nextLine() {
-    if (index < dialogue.length - 1) {
-      index++;
-      text.innerText = dialogue[index];
-    }
-    if (index == dialogue.length-1) {
-     window.location.assign("ending_2.html");
-    }
-  };
-  
-  document.getElementById("back").onclick = function(e) {
-    e.stopPropagation();
-    if (index > 0) {
-      index--;
-      document.getElementById("text").innerText = dialogue[index];
-    }
-    if (index < dialogue.length) {
-      document.getElementById("choice_1").style.display = "none";
-      document.getElementById("choice_2").style.display = "none";
-      document.getElementById("choice_3").style.display = "none";
-    }
-  };
-  
-  document.getElementById("choice_1").onclick = function(e) {
-    e.stopPropagation();
-    index = 0;
+  }
+  else if (index2 == 2) {
     dialogue = [
       "you run after him",
       "you see him with another girl",
@@ -198,14 +71,45 @@ else if (index2 == 2) {
       "you take a deep breath and whip it out",
     ];
     document.getElementById("text").innerText = dialogue[index];
-    document.getElementById("choice_1").style.display = "none";
-    document.getElementById("choice_2").style.display = "none";
-    document.getElementById("choice_3").style.display = "none";
-  };
-  
-  document.getElementById("choice_2").onclick = function(e) {
-    e.stopPropagation();
-    index = 0;
+    
+  }
+  else if (index2 == 3) {
+    dialogue = [
+      "you grab your hidden knife and plunge it into his heart",
+      "you stick your hand in it and feel the pulse disapear",
+      "now your mine foreverrrr.",
+    ];
+    document.getElementById("text").innerText = dialogue[index];
+    
+  }
+  document.getElementById("choice_1").style.display = "none";
+  document.getElementById("choice_2").style.display = "none";
+  document.getElementById("choice_3").style.display = "none";
+}
+document.getElementById("choice_2").onclick = function(e) {
+  e.stopPropagation();
+  index = 0;
+  if (index2 == 0) {
+    dialogue = [
+      "you sad",
+      "you run home",
+      "jump in bed and start kicking you feet",
+    ];
+    document.getElementById("text").innerText = dialogue[index];
+    index2 = 2;
+    document.getElementById("choice_1").innerText = "go back out and find him";
+    document.getElementById("choice_2").innerText = "call your friend jonathan";
+    document.getElementById("choice_3").innerText = "buy alchohol";
+  }
+ else if (index2 == 1) {
+    dialogue = [
+      "wow i never knew we lived so close",
+      "can i go inside?",
+      "pwease sempai.",
+    ];
+    document.getElementById("text").innerText = dialogue[index];
+  }
+  else if (index2 == 2) {
     dialogue = [
       "jonathan tells you to be more aggresive",
       "apparently dudes like their women aggresive",
@@ -213,71 +117,8 @@ else if (index2 == 2) {
       "but he falls and hits his head",
     ];
     document.getElementById("text").innerText = dialogue[index];
-    document.getElementById("choice_1").style.display = "none";
-    document.getElementById("choice_2").style.display = "none";
-    document.getElementById("choice_3").style.display = "none";
-  };
-  
-  document.getElementById("choice_3").onclick = function(e) {
-    e.stopPropagation();
-    index = 0;
-    dialogue = [
-      "you start drinking pure vodka",
-      "then you remember that senpai was talking to a girl earlier",
-      "you go and find sempai to talk to him",
-      "but you accidently take our your glock",
-    ];
-    document.getElementById("text").innerText = dialogue[index];
-    document.getElementById("choice_1").style.display = "none";
-    document.getElementById("choice_2").style.display = "none";
-    document.getElementById("choice_3").style.display = "none";
-  };
-}
-/*
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-*/
-else if (index2 == 3) {
-  document.addEventListener("click", nextLine);
-  function nextLine() {
-    if (index < dialogue.length - 1) {
-      index++;
-      text.innerText = dialogue[index];
-    }
-    if (index == dialogue.length-1) {
-     window.location.assign("ending_2.html");
-    }
-  };
-  
-  document.getElementById("back").onclick = function(e) {
-    e.stopPropagation();
-    if (index > 0) {
-      index--;
-      document.getElementById("text").innerText = dialogue[index];
-    }
-    if (index < dialogue.length) {
-      document.getElementById("choice_1").style.display = "none";
-      document.getElementById("choice_2").style.display = "none";
-      document.getElementById("choice_3").style.display = "none";
-    }
-  };
-  
-  document.getElementById("choice_1").onclick = function(e) {
-    e.stopPropagation();
-    index = 0;
-    dialogue = [
-      "you grab your hidden knife and plunge it into his heart",
-      "you stick your hand in it and feel the pulse disapear",
-      "now your mine foreverrrr.",
-    ];
-    document.getElementById("text").innerText = dialogue[index];
-    document.getElementById("choice_1").style.display = "none";
-    document.getElementById("choice_2").style.display = "none";
-    document.getElementById("choice_3").style.display = "none";
-  };
-  
-  document.getElementById("choice_2").onclick = function(e) {
-    e.stopPropagation();
-    index = 0;
+  }
+  else if (index2 == 3) {
     dialogue = [
       "you take out your precoiouse glock",
       "sempai if i cant you no one cannn",
@@ -285,14 +126,44 @@ else if (index2 == 3) {
       "pew pew pew",
     ];
     document.getElementById("text").innerText = dialogue[index];
-    document.getElementById("choice_1").style.display = "none";
-    document.getElementById("choice_2").style.display = "none";
-    document.getElementById("choice_3").style.display = "none";
-  };
-  
-  document.getElementById("choice_3").onclick = function(e) {
-    e.stopPropagation();
-    index = 0;
+  }
+  document.getElementById("choice_1").style.display = "none";
+  document.getElementById("choice_2").style.display = "none";
+  document.getElementById("choice_3").style.display = "none";
+};
+
+document.getElementById("choice_3").onclick = function(e) {
+  e.stopPropagation();
+  index = 0;
+  if (index2 == 0) {
+    dialogue = [
+      "you think about klling sempai",
+      "how should you do it?",
+    ];
+    document.getElementById("text").innerText = dialogue[index]; 
+    index2 = 3;
+    document.getElementById("choice_1").innerText = "knife";
+    document.getElementById("choice_2").innerText = "gun";
+    document.getElementById("choice_3").innerText = "bomb";
+  }
+  else if (index2 == 1) {
+    dialogue = [
+      "awh goodby sempai",
+      "see you tomorow",
+      "(i hope we can get closer).",
+    ];
+    document.getElementById("text").innerText = dialogue[index];
+  }
+  else if (index2 == 2) {
+    dialogue = [
+      "you start drinking pure vodka",
+      "then you remember that senpai was talking to a girl earlier",
+      "you go and find sempai to talk to him",
+      "but you accidently take our your glock",
+    ];
+    document.getElementById("text").innerText = dialogue[index];
+  }
+  else if (index2 == 3) {
     dialogue = [
       "you go to your chem lab",
       "you make a c4",
@@ -300,10 +171,10 @@ else if (index2 == 3) {
       "THEN YOU BOOOMMMM",
     ];
     document.getElementById("text").innerText = dialogue[index];
-    document.getElementById("choice_1").style.display = "none";
-    document.getElementById("choice_2").style.display = "none";
-    document.getElementById("choice_3").style.display = "none";
-  };
-}
+  }
 
+  document.getElementById("choice_1").style.display = "none";
+  document.getElementById("choice_2").style.display = "none";
+  document.getElementById("choice_3").style.display = "none";
+};
 
