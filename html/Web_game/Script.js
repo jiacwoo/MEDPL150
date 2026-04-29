@@ -56,7 +56,7 @@ document.getElementById("choice_2").onclick = function(e) {
   document.getElementById("text").innerText = dialogue[index];
 };
 
-document.getElementById("choice_3").onclick = function() {
+document.getElementById("choice_3").onclick = function(e) {
   e.stopPropagation();
   index = 0;
   dialogue = [
