@@ -17,13 +17,11 @@ function nextLine() {
     text.innerText = dialogue[index];
   }
   if (index == dialogue.length-1) {
-    if (index2 == 0) {
       document.getElementById("choice_1").style.display = "block";
       document.getElementById("choice_2").style.display = "block";
       document.getElementById("choice_3").style.display = "block";
-    }
-    else if (index2 == 1) window.location.assign("ending_1.html");
-    else if (index2 == 2||index2 == 3) window.location.assign("ending_2.html");
+    
+  
   }
 };
 
