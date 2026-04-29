@@ -42,6 +42,9 @@ document.getElementById("choice_1").onclick = function(e) {
     "adasd",
   ];
   document.getElementById("text").innerText = dialogue[index];
+  document.getElementById("choice_1").style.display = "none";
+  document.getElementById("choice_2").style.display = "none";
+  document.getElementById("choice_3").style.display = "none";
 };
 
 document.getElementById("choice_2").onclick = function(e) {
