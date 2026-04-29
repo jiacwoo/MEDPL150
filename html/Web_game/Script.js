@@ -3,7 +3,7 @@ const text = document.getElementById("text");
 let dialogue = [
   "Your head hurts.",
   "You hear something breathing nearby...",
-  "..."
+  "...",
 ];
 
 document.addEventListener("click", nextLine);
@@ -37,8 +37,8 @@ document.getElementById("choice_1").onclick = function() {
   dialogue = [
     "aaa",
     "Yatha...",
-    "vbasfdas."
-    "adasd"
+    "vbasfdas.",
+    "adasd",
   ];
 };
 
@@ -47,8 +47,8 @@ document.getElementById("choice_2").onclick = function() {
   dialogue = [
     "apple",
     "cheese",
-    "dorito."
-    "banana"
+    "dorito.",
+    "banana",
   ];
 };
 
@@ -57,7 +57,7 @@ document.getElementById("choice_3").onclick = function() {
   dialogue = [
     "amongs",
     "sus",
-    "dasdascxzxx."
-    "aaaaaa"
+    "dasdascxzxx.",
+    "aaaaaa",
   ];
 };
