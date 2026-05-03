@@ -78,7 +78,7 @@ document.getElementById("choice_1").onclick = function(e) {
     dialogue = [
       "You step forward.",
       "Stop. That’s a mistake.",
-      "You ignore it.,",
+      "You ignore it.",
       "Your fingers work at the knots.",
       "The person leans closer.",
       "The final knot loosens.",
