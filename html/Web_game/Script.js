@@ -3,9 +3,12 @@ let index2 = 0;
 let end = false;
 const text = document.getElementById("text");
 let dialogue = [
-  "you see ur sempai",
-  "You feel tingling in ur heart",
-  "what do you want to do?",
+  "You wake up standing in front of a basement door.",
+  "You don’t remember how you got here.",
+  "That’s fine. It’s not important.",
+  "What is important is what’s behind that door.",
+  "There is something dangerous down there.",
+  "You need to deal with it.",
 ];
 
 document.getElementById("choice_1").innerText = "you ask him out";
