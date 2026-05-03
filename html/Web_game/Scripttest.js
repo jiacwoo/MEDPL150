@@ -132,7 +132,7 @@ document.getElementById("choice_2").onclick = function(e) {
  else if (index2 == 1) {
     dialogue = [
       "You don’t move.",
-      "“Who are you?” you ask.",
+      "Who are you? you ask.",
       "It doesn’t matter who it is.",
       "You have a job to do.",
       "The person tilts their head.",
