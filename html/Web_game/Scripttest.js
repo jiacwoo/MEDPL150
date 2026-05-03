@@ -78,15 +78,15 @@ document.getElementById("choice_1").onclick = function(e) {
     dialogue = [
       "You step forward.",
       "Stop. That’s a mistake.",
-      "You ignore it.,
+      "You ignore it.,",
       "Your fingers work at the knots.",
       "The person leans closer.",
       "The final knot loosens."
       "The ropes fall to the floor",
       "...",
-      "Something feels wrong."
-      "Then their expression changes."
-      "Then the lights go out."
+      "Something feels wrong.",
+      "Then their expression changes.",
+      "Then the lights go out.",
     ];
     document.getElementById("text").innerText = dialogue[index];
     end1 = true;
@@ -193,7 +193,7 @@ document.getElementById("choice_3").onclick = function(e) {
       "You step through.",
       "The house is gone.",
       "You are standing in front of the basement door.",
-      "The narrator sighs."
+      "The narrator sighs.",
       "Let's try this again.",
     ];
     document.getElementById("text").innerText = dialogue[index];
