@@ -136,7 +136,7 @@ document.getElementById("choice_2").onclick = function(e) {
       "It doesn’t matter who it is.",
       "You have a job to do.",
       "The person tilts their head.",
-      "“That’s not what you asked last time.”,
+      "That’s not what you asked last time.”,
       "Do you want to know the truth?",
       "The person smiles.",
       "You put me here.",
