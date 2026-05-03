@@ -11,9 +11,9 @@ let dialogue = [
   "You need to deal with it.",
 ];
 
-document.getElementById("choice_1").innerText = "you ask him out";
-document.getElementById("choice_2").innerText = "you wuss out";
-document.getElementById("choice_3").innerText = "murder";
+document.getElementById("choice_1").innerText = "Enter immediately";
+document.getElementById("choice_2").innerText = "Hesitate and listen";
+document.getElementById("choice_3").innerText = "Refuse to go down";
 document.addEventListener("click", nextLine);
 function nextLine() {
   if (index2 == 1 && index == dialogue.length - 1 && end == true) {
@@ -51,9 +51,15 @@ document.getElementById("choice_1").onclick = function(e) {
   index = 0;
   if (index2 == 0) {
     dialogue = [
-      "senpai says yes1",
-      "omg",
-      "yaaayyyy",
+      "The door creaks open",
+      "You step down.",
+      "One step. Two. Three.",
+      "The door shuts behind you.",
+      "...",
+      "There’s someone in the center of the room.",
+      "Sitting in a chair.",
+      "Tied up.",
+      "Waiting.",
     ];
     document.getElementById("text").innerText = dialogue[index];
     index2 = 1;
