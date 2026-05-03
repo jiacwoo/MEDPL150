@@ -1,6 +1,7 @@
 let index = 0;
 let index2 = 0;
-let end = false;
+let end1 = false;
+let end2 = false;
 const text = document.getElementById("text");
 let dialogue = [
   "You wake up standing in front of a basement door.",
@@ -16,8 +17,14 @@ document.getElementById("choice_2").innerText = "Hesitate and listen";
 document.getElementById("choice_3").innerText = "Refuse to go down";
 document.addEventListener("click", nextLine);
 function nextLine() {
-  if (index2 == 1 && index == dialogue.length - 1 && end == true) {
+  if (index2 == 1 && index == dialogue.length - 1 && end1 == true) {
       window.location.assign("ending_1.html");
+  }
+  else if (index2 == 1 && index == dialogue.length - 1 && end2 == true) {
+      window.location.assign("ending_2.html");
+  }
+  else if (index2 == 1 && index == dialogue.length - 1 && end3 == true) {
+      window.location.assign("ending_2.html");
   }
   else if ((index2 == 2 || index2 == 3) && index == dialogue.length - 1 && end == true) {
       window.location.assign("ending_2.html");
@@ -63,18 +70,26 @@ document.getElementById("choice_1").onclick = function(e) {
     ];
     document.getElementById("text").innerText = dialogue[index];
     index2 = 1;
-    document.getElementById("choice_1").innerText = "go to hotel";
-    document.getElementById("choice_2").innerText = "go home together";
-    document.getElementById("choice_3").innerText = "say goodbye to him";
+    document.getElementById("choice_1").innerText = "Untie Them";
+    document.getElementById("choice_2").innerText = "Ask who they are";
+    document.getElementById("choice_3").innerText = "Leave them";
   }
   else if (index2 == 1) {
     dialogue = [
-      "oh my god its my first time going to a hotel!",
-      "im so happy!!!!",
-      "eeeeeeeeeeeeee",
+      "You step forward.",
+      "Stop. That’s a mistake.",
+      "You ignore it.,
+      "Your fingers work at the knots.",
+      "The person leans closer.",
+      "The final knot loosens."
+      "The ropes fall to the floor",
+      "...",
+      "Something feels wrong."
+      "Then their expression changes."
+      "Then the lights go out."
     ];
     document.getElementById("text").innerText = dialogue[index];
-    end = true;
+    end1 = true;
   }
   else if (index2 == 2) {
     dialogue = [
@@ -116,12 +131,19 @@ document.getElementById("choice_2").onclick = function(e) {
   }
  else if (index2 == 1) {
     dialogue = [
-      "wow i never knew we lived so close",
-      "can i go inside?",
-      "pwease sempai.",
+      "You don’t move.",
+      "“Who are you?” you ask.",
+      "It doesn’t matter who it is.",
+      "You have a job to do.",
+      "The person tilts their head.",
+      "“That’s not what you asked last time.”,
+      "“Do you want to know the truth?”",
+      "The person smiles.",
+      "“You put me here.”",
+      "Everything goes quiet.",
     ];
     document.getElementById("text").innerText = dialogue[index];
-    end = true;
+    end2 = true;
   }
   else if (index2 == 2) {
     dialogue = [
@@ -164,12 +186,18 @@ document.getElementById("choice_3").onclick = function(e) {
   }
   else if (index2 == 1) {
     dialogue = [
-      "awh goodby sempai",
-      "see you tomorow",
-      "(i hope we can get closer).",
+      "You take a step back.",
+      "You turn toward the stairs.",
+      "You climb the stairs.",
+      "You open the door.",
+      "You step through.",
+      "The house is gone.",
+      "You are standing in front of the basement door.",
+      "The narrator sighs."
+      "Let's try this again.",
     ];
     document.getElementById("text").innerText = dialogue[index];
-    end = true;
+    ;
   }
   else if (index2 == 2) {
     dialogue = [
