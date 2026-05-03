@@ -81,7 +81,7 @@ document.getElementById("choice_1").onclick = function(e) {
       "You ignore it.,",
       "Your fingers work at the knots.",
       "The person leans closer.",
-      "The final knot loosens."
+      "The final knot loosens.",
       "The ropes fall to the floor",
       "...",
       "Something feels wrong.",
