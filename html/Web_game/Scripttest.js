@@ -9,6 +9,7 @@ let end5 = false;
 const speaker = document.getElementById("speaker");
 const text = document.getElementById("text");
 
+speaker.style.display = "block"
 if (index === 0 || index === 1) {
   speaker.style.display = "none";
 };
