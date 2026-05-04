@@ -10,12 +10,12 @@ const speaker = document.getElementById("speaker");
 const text = document.getElementById("text");
 
 
-if (index === 0 || index === 1) {
+if (index == 0 || index == 1) {
   speaker.style.display = "none";
-}
-else{
+} 
+else {
   speaker.style.display = "block";
-};
+}
 
 let dialogue = [
   "You wake up standing in front of a basement door.",
