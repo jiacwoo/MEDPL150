@@ -2,6 +2,7 @@ let index = 0;
 let index2 = 0;
 let end1 = false;
 let end2 = false;
+let start = true;
 const text = document.getElementById("text");
 let dialogue = [
   "You wake up standing in front of a basement door.",
@@ -11,10 +12,12 @@ let dialogue = [
   "There is something dangerous down there.",
   "You need to deal with it.",
 ];
-
-document.getElementById("choice_1").innerText = "Enter immediately";
-document.getElementById("choice_2").innerText = "Hesitate and listen";
-document.getElementById("choice_3").innerText = "Refuse to go down";
+if (start = true) {
+  document.getElementById("choice_1").innerText = "Enter immediately";
+  document.getElementById("choice_2").innerText = "Hesitate and listen";
+  document.getElementById("choice_3").innerText = "Refuse to go down";
+}
+  
 document.addEventListener("click", nextLine);
 function nextLine() {
   if (index2 == 1 && index == dialogue.length - 1 && end1 == true) {
@@ -55,6 +58,7 @@ document.getElementById("back").onclick = function(e) {
 
 document.getElementById("choice_1").onclick = function(e) {
   e.stopPropagation();
+  start = false;
   index = 0;
   if (index2 == 0) {
     dialogue = [
@@ -116,6 +120,7 @@ document.getElementById("choice_1").onclick = function(e) {
 }
 document.getElementById("choice_2").onclick = function(e) {
   e.stopPropagation();
+  start = false;
   index = 0;
   if (index2 == 0) {
     dialogue = [
@@ -172,6 +177,7 @@ document.getElementById("choice_2").onclick = function(e) {
 
 document.getElementById("choice_3").onclick = function(e) {
   e.stopPropagation();
+  start = false;
   index = 0;
   if (index2 == 0) {
     dialogue = [
@@ -185,6 +191,7 @@ document.getElementById("choice_3").onclick = function(e) {
     document.getElementById("choice_3").innerText = "bomb";
   }
   else if (index2 == 1) {
+    start = true;
     dialogue = [
       "You take a step back.",
       "You turn toward the stairs.",
