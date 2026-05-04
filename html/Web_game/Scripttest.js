@@ -44,12 +44,21 @@ function nextLine() {
     index++;
     text.innerText = dialogue[index];
   }
-  if (index2 === 0 && (index == 0 || index == 1 || index == 2)) {
+  if (index2 == 0 && (index == 0 || index == 1 || index == 2)) {
+    speaker.style.display = "none";
+  } 
+  if (index2 == 1 && (index == 0 || index == 1 || index == 2 || index == 3 || index == 4 || index == 5 || index == 6 || index == 7 || index == 8))
+  else {
+    speaker.style.display = "block";
+  };
+  if (index2 == 0 && (index == 0 || index == 1 || index == 2)) {
     speaker.style.display = "none";
   } 
   else {
     speaker.style.display = "block";
   };
+  
+  
   if (index == dialogue.length-1 && end1 == false && end2 == false && end3 == false && end4 == false && end5 == false) {
       document.getElementById("choice_1").style.display = "block";
       document.getElementById("choice_2").style.display = "block";
@@ -68,7 +77,7 @@ document.getElementById("back").onclick = function(e) {
     document.getElementById("choice_2").style.display = "none";
     document.getElementById("choice_3").style.display = "none";
   }
-  if (index2 === 0 && (index == 0 || index == 1 || index == 2)) {
+  if (index2 == 0 && (index == 0 || index == 1 || index == 2)) {
     speaker.style.display = "none";
   } 
   else {
@@ -258,7 +267,7 @@ document.getElementById("choice_3").onclick = function(e) {
       "Still, the door remains in front of you.",
       "The narrator sighs.",
       "Then the basement door opens by itself.",
-      "Something below whispers",
+      "Something below whispers.",
       "Don’t let it choose for you.",
     ];
     document.getElementById("text").innerText = dialogue[index]; 
@@ -309,7 +318,7 @@ document.getElementById("choice_3").onclick = function(e) {
       "You turn around and walk away.",
       "The hallway stretches longer with every step.",
       "The front door is ahead of you.",
-      "TIt opens before you touch it.",
+      "It opens before you touch it.",
       "Outside is the basement door.",
       "The narrator laughs softly.",
       "You can leave after you finish.",
