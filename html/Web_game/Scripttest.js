@@ -23,13 +23,6 @@ document.getElementById("choice_2").innerText = "Hesitate and listen";
 document.getElementById("choice_3").innerText = "Refuse to go down";
   
 document.addEventListener("click", nextLine);
-if (index == 0 || index == 1) {
-  speaker.style.display = "none";
-} 
-else {
-  speaker.style.display = "block";
-};
-
 function nextLine() {
   if (index2 == 1 && index == dialogue.length - 1 && end1 == true) {
       window.location.assign("ending_1.html");
@@ -49,6 +42,12 @@ function nextLine() {
   if (index < dialogue.length - 1) {
     index++;
     text.innerText = dialogue[index];
+  if (index == 0 || index == 1) {
+    speaker.style.display = "none";
+  } 
+  else {
+    speaker.style.display = "block";
+};
   }
   if (index == dialogue.length-1 && end1 == false && end2 == false && end3 == false && end4 == false && end5 == false) {
       document.getElementById("choice_1").style.display = "block";
