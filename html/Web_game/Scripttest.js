@@ -6,7 +6,13 @@ let end3 = false;
 let end4 = false;
 let end5 = false;
 
+const speaker = document.getElementById("speaker");
 const text = document.getElementById("text");
+
+if (index == 0,1,) {
+  speaker.style.display = "none";
+};
+
 let dialogue = [
   "You wake up standing in front of a basement door.",
   "You don’t remember how you got here.",
