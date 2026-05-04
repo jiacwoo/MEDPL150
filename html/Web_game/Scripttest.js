@@ -28,16 +28,16 @@ function nextLine() {
       window.location.assign("ending_2.html");
   }
   else if (index2 == 2 && index == dialogue.length - 1 && end3 == true) {
-      window.location.assign("ending_2.html");
+      window.location.assign("ending_3.html");
   }
   else if (index2 == 2 && index == dialogue.length - 1 && end4 == true) {
-      window.location.assign("ending_2.html");
+      window.location.assign("ending_4.html");
   }
   if (index < dialogue.length - 1) {
     index++;
     text.innerText = dialogue[index];
   }
-  if (index == dialogue.length-1 && end1 == false && end2 == false && end3 == false) {
+  if (index == dialogue.length-1 && end1 == false && end2 == false && end3 == false && end4 == false) {
       document.getElementById("choice_1").style.display = "block";
       document.getElementById("choice_2").style.display = "block";
       document.getElementById("choice_3").style.display = "block";
@@ -113,12 +113,28 @@ document.getElementById("choice_1").onclick = function(e) {
   }
   else if (index2 == 3) {
     dialogue = [
-      "you grab your hidden knife and plunge it into his heart",
-      "you stick your hand in it and feel the pulse disapear",
-      "now your mine foreverrrr.",
+      "You grit your teeth.",
+      "Fine.",
+      "If the house wants you downstairs, then you’ll go downstairs.",
+      "The narrator sounds pleased.",
+      "Good. Finally.",
+      "You grab the handle.",
+      "The door creaks open.",
+      "You step down.",
+      "One step. Two. Three.",
+      "The door shuts behind you.",
+      "...",
+      "There’s someone in the center of the room.",
+      "Sitting in a chair.",
+      "Tied up.",
+      "Waiting.",
     ];
     document.getElementById("text").innerText = dialogue[index];
-    end = true;
+    index2 = 1;
+
+    document.getElementById("choice_1").innerText = "Untie Them";
+    document.getElementById("choice_2").innerText = "Ask who they are";
+    document.getElementById("choice_3").innerText = "Leave them";
   }
   document.getElementById("choice_1").style.display = "none";
   document.getElementById("choice_2").style.display = "none";
@@ -208,14 +224,25 @@ document.getElementById("choice_3").onclick = function(e) {
   index = 0;
   if (index2 == 0) {
     dialogue = [
-      "you think about klling sempai",
-      "how should you do it?",
+      "You take your hand off the door.",
+      "No.",
+      "You’re not going down there.",
+      "The narrator speaks slowly.",
+      "That wasn’t one of your options.",
+      "You step back.",
+      "The door does not get farther away.",
+      "You step back again.",
+      "Still, the door remains in front of you.",
+      "The narrator sighs.",
+      "Then the basement door opens by itself.",
+      "Something below whispers",
+      "Don’t let it choose for you.",
     ];
     document.getElementById("text").innerText = dialogue[index]; 
     index2 = 3;
-    document.getElementById("choice_1").innerText = "knife";
-    document.getElementById("choice_2").innerText = "gun";
-    document.getElementById("choice_3").innerText = "bomb";
+    document.getElementById("choice_1").innerText = "Force yourself to go down";
+    document.getElementById("choice_2").innerText = "Stay still";
+    document.getElementById("choice_3").innerText = "Leave the house";
   }
   else if (index2 == 1) {
     dialogue = [
