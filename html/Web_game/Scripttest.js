@@ -4,6 +4,7 @@ let end1 = false;
 let end2 = false;
 let end3 = false;
 let end4 = false;
+let end5 = false;
 
 const text = document.getElementById("text");
 let dialogue = [
@@ -33,11 +34,14 @@ function nextLine() {
   else if (index2 == 2 && index == dialogue.length - 1 && end4 == true) {
       window.location.assign("ending_4.html");
   }
+  else if (index2 == 3 && index == dialogue.length - 1 && end5 == true) {
+      window.location.assign("ending_5.html");
+  }
   if (index < dialogue.length - 1) {
     index++;
     text.innerText = dialogue[index];
   }
-  if (index == dialogue.length-1 && end1 == false && end2 == false && end3 == false && end4 == false) {
+  if (index == dialogue.length-1 && end1 == false && end2 == false && end3 == false && end4 == false && end5 == false) {
       document.getElementById("choice_1").style.display = "block";
       document.getElementById("choice_2").style.display = "block";
       document.getElementById("choice_3").style.display = "block";
@@ -199,20 +203,24 @@ document.getElementById("choice_2").onclick = function(e) {
     ];
     document.getElementById("text").innerText = dialogue[index];
     index2 = 1;
-  
     document.getElementById("choice_1").innerText = "Untie Them";
     document.getElementById("choice_2").innerText = "Ask who they are";
     document.getElementById("choice_3").innerText = "Leave them";
   }
   else if (index2 == 3) {
     dialogue = [
-      "you take out your precoiouse glock",
-      "sempai if i cant you no one cannn",
-      "you shoot him 25 times.",
-      "pew pew pew",
+      "You do nothing.",
+      "The narrator says nothing.",
+      "For a moment, you think you won.",
+      "Then the room blinks.",
+      "Not your eyes.",
+      "The room.",
+      "You are standing in front of the basement door again.",
+      "The narrator sounds tired.",
+      "Standing still is still a choice.",
     ];
     document.getElementById("text").innerText = dialogue[index];
-    end = true;
+    end5 = true;
   }
   document.getElementById("choice_1").style.display = "none";
   document.getElementById("choice_2").style.display = "none";
@@ -258,7 +266,6 @@ document.getElementById("choice_3").onclick = function(e) {
       "Let's try this again.",
     ];
     document.getElementById("text").innerText = dialogue[index];
-
     index2 = 0;
     document.getElementById("choice_1").innerText = "Enter immediately";
     document.getElementById("choice_2").innerText = "Hesitate and listen";
@@ -271,7 +278,7 @@ document.getElementById("choice_3").onclick = function(e) {
       "This isn’t your problem.",
       "It never was.",
       "The narrator laughs quietly.",
-      "…you really think that?",
+      "You really think that?",
       "You keep walking.",
       "You don’t look back.",
       "The world fades.",
@@ -284,13 +291,19 @@ document.getElementById("choice_3").onclick = function(e) {
   }
   else if (index2 == 3) {
     dialogue = [
-      "you go to your chem lab",
-      "you make a c4",
-      "then you force senpai to swallow.",
-      "THEN YOU BOOOMMMM",
+      "You turn around and walk away.",
+      "The hallway stretches longer with every step.",
+      "The front door is ahead of you.",
+      "TIt opens before you touch it.",
+      "Outside is the basement door.",
+      "The narrator laughs softly.",
+      "You can leave after you finish.",
     ];
     document.getElementById("text").innerText = dialogue[index];
-    end = true;
+    index2 = 3;
+    document.getElementById("choice_1").innerText = "Force yourself to go down";
+    document.getElementById("choice_2").innerText = "Stay still";
+    document.getElementById("choice_3").innerText = "Leave the house";
   }
   document.getElementById("choice_1").style.display = "none";
   document.getElementById("choice_2").style.display = "none";
