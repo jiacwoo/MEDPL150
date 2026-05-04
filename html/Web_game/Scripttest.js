@@ -12,7 +12,7 @@ let dialogue = [
   "There is something dangerous down there.",
   "You need to deal with it.",
 ];
-if (start = true) {
+if (start == true) {
   document.getElementById("choice_1").innerText = "Enter immediately";
   document.getElementById("choice_2").innerText = "Hesitate and listen";
   document.getElementById("choice_3").innerText = "Refuse to go down";
