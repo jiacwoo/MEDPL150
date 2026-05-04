@@ -10,6 +10,7 @@ const speaker = document.getElementById("speaker");
 const text = document.getElementById("text");
 
 let dialogue = [
+  "...",
   "You wake up standing in front of a basement door.",
   "You don’t remember how you got here.",
   "That’s fine. It’s not important.",
@@ -42,7 +43,7 @@ function nextLine() {
   if (index < dialogue.length - 1) {
     index++;
     text.innerText = dialogue[index];
-  if (index == 0 || index == 1) {
+  if (index == 0 || index == 1 || index == 2) {
     speaker.style.display = "none";
   } 
   else {
@@ -66,6 +67,12 @@ document.getElementById("back").onclick = function(e) {
     document.getElementById("choice_1").style.display = "none";
     document.getElementById("choice_2").style.display = "none";
     document.getElementById("choice_3").style.display = "none";
+  }
+  if (index == 0 || index == 1 || index == 2) {
+    speaker.style.display = "none";
+  } 
+  else {
+    speaker.style.display = "block";
   }
 };
 
