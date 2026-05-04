@@ -5,6 +5,7 @@ const text = document.getElementById("text");
 speaker.innerText = "Narrator";
 let dialogue = [
   "You wake up standing in front of a basement door.",
+  "You wake up standing in front of a basement door.",
   "You don’t remember how you got here.",
   "That’s fine. It’s not important.",
   "What is important is what’s behind that door.",
