@@ -2,6 +2,7 @@ let index = 0;
 let index2 = 0;
 let end = false;
 const text = document.getElementById("text");
+speaker.innerText = "Narrator";
 let dialogue = [
   "You wake up standing in front of a basement door.",
   "You don’t remember how you got here.",
