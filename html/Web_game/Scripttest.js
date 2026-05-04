@@ -46,7 +46,7 @@ function nextLine() {
   }
   
   
-  if (index2 == 1 && (index == 0 || index == 1 || index == 2 || index == 7) {
+  if (index2 == 0 && (index == 0 || index == 1 || index == 2) {
     speaker.style.display = "none";
   } 
   else if (index2 == 1 && (index == 0 || index == 1 || index == 2 || index == 3 || index == 4 || index == 5 || index == 6 || index == 7 || index == 8)) {
@@ -88,6 +88,7 @@ document.getElementById("choice_1").onclick = function(e) {
 
   index = 0;
   if (index2 == 0) {
+    speaker.style.display = "none";
     dialogue = [
       "The door creaks open",
       "You step down.",
