@@ -177,7 +177,7 @@ document.getElementById("choice_2").onclick = function(e) {
 
 document.getElementById("choice_3").onclick = function(e) {
   e.stopPropagation();
-  start = false;
+  start = true;
   index = 0;
   if (index2 == 0) {
     dialogue = [
