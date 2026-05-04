@@ -70,7 +70,6 @@ document.getElementById("choice_1").onclick = function(e) {
 
   index = 0;
   if (index2 == 0) {
-    speaker.style.display = "none";
     dialogue = [
       "The door creaks open",
       "You step down.",
