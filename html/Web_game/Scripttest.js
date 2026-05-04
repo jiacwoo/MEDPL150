@@ -167,9 +167,22 @@ document.getElementById("choice_2").onclick = function(e) {
       "Exactly.",
       "You grab the handle and open the door.",
       "The darkness below feels familiar.",
+      "The door creaks open",
+      "You step down.",
+      "One step. Two. Three.",
+      "The door shuts behind you.",
+      "...",
+      "There’s someone in the center of the room.",
+      "Sitting in a chair.",
+      "Tied up.",
+      "Waiting.",
     ];
     document.getElementById("text").innerText = dialogue[index];
-    index2 = 0;
+    index2 = 1;
+  
+    document.getElementById("choice_1").innerText = "Untie Them";
+    document.getElementById("choice_2").innerText = "Ask who they are";
+    document.getElementById("choice_3").innerText = "Leave them";
   }
   else if (index2 == 3) {
     dialogue = [
