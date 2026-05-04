@@ -43,13 +43,13 @@ function nextLine() {
   if (index < dialogue.length - 1) {
     index++;
     text.innerText = dialogue[index];
-  if (index == 0 || index == 1 || index == 2) {
+  }
+  if (index2 === 0 && (index == 0 || index == 1 || index == 2)) {
     speaker.style.display = "none";
   } 
   else {
     speaker.style.display = "block";
-};
-  }
+  };
   if (index == dialogue.length-1 && end1 == false && end2 == false && end3 == false && end4 == false && end5 == false) {
       document.getElementById("choice_1").style.display = "block";
       document.getElementById("choice_2").style.display = "block";
@@ -68,12 +68,12 @@ document.getElementById("back").onclick = function(e) {
     document.getElementById("choice_2").style.display = "none";
     document.getElementById("choice_3").style.display = "none";
   }
-  if (index == 0 || index == 1 || index == 2) {
+  if (index2 === 0 && (index == 0 || index == 1 || index == 2)) {
     speaker.style.display = "none";
   } 
   else {
     speaker.style.display = "block";
-  }
+  };
 };
 
 document.getElementById("choice_1").onclick = function(e) {
