@@ -28,10 +28,10 @@ function nextLine() {
       window.location.assign("ending_2.html");
   }
   else if (index2 == 2 && index == dialogue.length - 1 && end3 == true) {
-      window.location.assign("ending_3.html");
+      window.location.assign("ending_2.html");
   }
   else if (index2 == 2 && index == dialogue.length - 1 && end4 == true) {
-      window.location.assign("ending_4.html");
+      window.location.assign("ending_2.html");
   }
   if (index < dialogue.length - 1) {
     index++;
