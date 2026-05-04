@@ -9,14 +9,6 @@ let end5 = false;
 const speaker = document.getElementById("speaker");
 const text = document.getElementById("text");
 
-
-if (index == 0 || index == 1) {
-  speaker.style.display = "none";
-} 
-else {
-  speaker.style.display = "block";
-}
-
 let dialogue = [
   "You wake up standing in front of a basement door.",
   "You don’t remember how you got here.",
@@ -31,6 +23,13 @@ document.getElementById("choice_2").innerText = "Hesitate and listen";
 document.getElementById("choice_3").innerText = "Refuse to go down";
   
 document.addEventListener("click", nextLine);
+if (index == 0 || index == 1) {
+  speaker.style.display = "none";
+} 
+else {
+  speaker.style.display = "block";
+};
+
 function nextLine() {
   if (index2 == 1 && index == dialogue.length - 1 && end1 == true) {
       window.location.assign("ending_1.html");
