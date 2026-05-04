@@ -14,7 +14,7 @@ if (index === 0 || index === 1) {
   speaker.style.display = "none";
 }
 else{
-  speaker.style.display = "block"
+  speaker.style.display = "block";
 };
 
 let dialogue = [
