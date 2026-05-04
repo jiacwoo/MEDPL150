@@ -45,10 +45,8 @@ function nextLine() {
     text.innerText = dialogue[index];
   }
   
-
-
   
-  if (index2 == 0 && (index == 0 || index == 1 || index == 2)) {
+  i(index2 == 0 && ((index >= 0 && index <= 2) || index == dialogue.length-1)) {
     speaker.style.display = "none";
   } 
   else if (index2 == 1 && (index == 0 || index == 1 || index == 2 || index == 3 || index == 4 || index == 5 || index == 6 || index == 7 || index == 8)) {
