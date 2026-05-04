@@ -2,6 +2,7 @@ let index = 0;
 let index2 = 0;
 let end1 = false;
 let end2 = false;
+let end3 = false;
 
 const text = document.getElementById("text");
 let dialogue = [
