@@ -25,10 +25,7 @@ function nextLine() {
   else if (index2 == 1 && index == dialogue.length - 1 && end2 == true) {
       window.location.assign("ending_2.html");
   }
-  else if (index2 == 1 && index == dialogue.length - 1 && end3 == true) {
-      window.location.assign("ending_2.html");
-  }
-  else if ((index2 == 2 || index2 == 3) && index == dialogue.length - 1 && end == true) {
+  else if (index2 == 2 && index == dialogue.length - 1 && end3 == true) {
       window.location.assign("ending_2.html");
   }
   if (index < dialogue.length - 1) {
@@ -96,13 +93,18 @@ document.getElementById("choice_1").onclick = function(e) {
   }
   else if (index2 == 2) {
     dialogue = [
-      "you run after him",
-      "you see him with another girl",
-      "your vision turns red and you remember the glock your mom gave you",
-      "you take a deep breath and whip it out",
+      "You step back from the door.",
+      "The narrator doesn’t respond.",
+      "Not immediately.",
+      "...",
+      "...",
+      "You leave the door behind.",
+      "The narrator speaks again.",
+      "Interesting",
+      "You don't normally do that",
     ];
     document.getElementById("text").innerText = dialogue[index];
-    end = true;
+    end3 = true;
   }
   else if (index2 == 3) {
     dialogue = [
@@ -123,15 +125,23 @@ document.getElementById("choice_2").onclick = function(e) {
   index = 0;
   if (index2 == 0) {
     dialogue = [
-      "you sad",
-      "you run home",
-      "jump in bed and start kicking you feet",
+      "You don’t reach for the handle.",
+      "Not yet",
+      "You lean closer to the door.",
+      "“…please don’t come down.”",
+      "The voice on the other side sounds… human.",
+      "The narrator cuts in immediately",
+      "Ignore that.",
+      "It’s lying.",
+      "The handle twitches slightly under your hand.",
+      "Like something moved on the other side.",
+      "Your grip tightens.",
     ];
     document.getElementById("text").innerText = dialogue[index];
     index2 = 2;
-    document.getElementById("choice_1").innerText = "go back out and find him";
-    document.getElementById("choice_2").innerText = "call your friend jonathan";
-    document.getElementById("choice_3").innerText = "buy alchohol";
+    document.getElementById("choice_1").innerText = "Believe the voice";
+    document.getElementById("choice_2").innerText = "Ignore it and go down";
+    document.getElementById("choice_3").innerText = "Walk away";
   }
  else if (index2 == 1) {
     dialogue = [
@@ -151,13 +161,14 @@ document.getElementById("choice_2").onclick = function(e) {
   }
   else if (index2 == 2) {
     dialogue = [
-      "jonathan tells you to be more aggresive",
-      "apparently dudes like their women aggresive",
-      "you see senpai and you jump on him.",
-      "but he falls and hits his head",
+      "You shake your head.",
+      "It’s just trying to trick me.",
+      "Exactly.",
+      "You grab the handle and open the door.",
+      "The darkness below feels familiar.",
     ];
     document.getElementById("text").innerText = dialogue[index];
-    end = true;
+    index2 = 0;
   }
   else if (index2 == 3) {
     dialogue = [
@@ -192,8 +203,9 @@ document.getElementById("choice_3").onclick = function(e) {
     dialogue = [
       "You take a step back.",
       "You turn toward the stairs.",
+      "The person laughs quietly.",
       "You climb the stairs.",
-      "You open the door.",
+      "The door opens easily this time.",
       "You step through.",
       "The house is gone.",
       "You are standing in front of the basement door.",
