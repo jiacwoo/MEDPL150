@@ -3,6 +3,7 @@ let index2 = 0;
 let end1 = false;
 let end2 = false;
 let end3 = false;
+let end4 = false;
 
 const text = document.getElementById("text");
 let dialogue = [
@@ -27,7 +28,10 @@ function nextLine() {
       window.location.assign("ending_2.html");
   }
   else if (index2 == 2 && index == dialogue.length - 1 && end3 == true) {
-      window.location.assign("ending_2.html");
+      window.location.assign("ending_3.html");
+  }
+  else if (index2 == 2 && index == dialogue.length - 1 && end4 == true) {
+      window.location.assign("ending_4.html");
   }
   if (index < dialogue.length - 1) {
     index++;
@@ -236,13 +240,20 @@ document.getElementById("choice_3").onclick = function(e) {
   }
   else if (index2 == 2) {
     dialogue = [
-      "you start drinking pure vodka",
-      "then you remember that senpai was talking to a girl earlier",
-      "you go and find sempai to talk to him",
-      "but you accidently take our your glock",
+      "You step away from the door.",
+      "This isn’t your problem.",
+      "It never was.",
+      "The narrator laughs quietly.",
+      "…you really think that?",
+      "You keep walking.",
+      "You don’t look back.",
+      "The world fades.",
+      "You are standing in front of the basement door.",
+      "The handle is already in your hand.",
+      "You don’t remember reaching for it.",
     ];
     document.getElementById("text").innerText = dialogue[index];
-    end = true;
+    end4 = true;
   }
   else if (index2 == 3) {
     dialogue = [
