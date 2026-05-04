@@ -6,7 +6,6 @@ let end3 = false;
 let end4 = false;
 let end5 = false;
 
-const speaker = document.getElementById("speaker");
 const text = document.getElementById("text");
 
 let dialogue = [
@@ -46,17 +45,6 @@ function nextLine() {
   }
   
   
-  if (index2 == 0 && (index == 0 || index == 1 || index == 2)) {
-    speaker.style.display = "none";
-  } 
-  else if (index2 == 1 && (index == 0 || index == 1 || index == 2 || index == 3 || index == 4 || index == 5 || index == 6 || index == 7 || index == 8)) {
-    speaker.style.display = "none";
-  } 
-  else {
-    speaker.style.display = "block";
-  };
-  
-  
   if (index == dialogue.length-1 && end1 == false && end2 == false && end3 == false && end4 == false && end5 == false) {
       document.getElementById("choice_1").style.display = "block";
       document.getElementById("choice_2").style.display = "block";
@@ -75,12 +63,6 @@ document.getElementById("back").onclick = function(e) {
     document.getElementById("choice_2").style.display = "none";
     document.getElementById("choice_3").style.display = "none";
   }
-  if (index2 == 0 && (index == 0 || index == 1 || index == 2)) {
-    speaker.style.display = "none";
-  } 
-  else {
-    speaker.style.display = "block";
-  };
 };
 
 document.getElementById("choice_1").onclick = function(e) {
