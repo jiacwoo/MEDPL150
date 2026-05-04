@@ -191,7 +191,6 @@ document.getElementById("choice_3").onclick = function(e) {
     document.getElementById("choice_3").innerText = "bomb";
   }
   else if (index2 == 1) {
-    start = true;
     dialogue = [
       "You take a step back.",
       "You turn toward the stairs.",
@@ -204,7 +203,7 @@ document.getElementById("choice_3").onclick = function(e) {
       "Let's try this again.",
     ];
     document.getElementById("text").innerText = dialogue[index];
-    ;
+    start = true;
   }
   else if (index2 == 2) {
     dialogue = [
