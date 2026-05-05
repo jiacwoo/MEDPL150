@@ -155,7 +155,7 @@ document.getElementById("choice_2").onclick = function(e) {
   if (index2 == 0) {
     dialogue = [
       "You don’t reach for the handle.",
-      "Not yet",
+      "Not yet.",
       "You lean closer to the door.",
       "“…please don’t come down.”",
       "The voice on the other side sounds… human.",
