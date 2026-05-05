@@ -71,7 +71,7 @@ document.getElementById("choice_1").onclick = function(e) {
   index = 0;
   if (index2 == 0) {
     dialogue = [
-      "The door creaks open",
+      "The door creaks open.",
       "You step down.",
       "One step. Two. Three.",
       "The door shuts behind you.",
