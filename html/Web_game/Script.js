@@ -159,7 +159,7 @@ document.getElementById("choice_2").onclick = function(e) {
       "You lean closer to the door.",
       "“…please don’t come down.”",
       "The voice on the other side sounds… human.",
-      "The narrator cuts in immediately",
+      "The narrator cuts in immediately.",
       "Ignore that.",
       "It’s lying.",
       "The handle twitches slightly under your hand.",
