@@ -1,3 +1,7 @@
+body {
+  background: black;
+}
+
 #end_text {
   position: fixed;
   top: 50%;
