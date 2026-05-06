@@ -113,7 +113,7 @@ document.getElementById("choice_1").onclick = function(e) {
       "...",
       "You leave the door behind.",
       "The narrator speaks again.",
-      "Interesting",
+      "Interesting.",
       "You don't normally do that",
     ];
     document.getElementById("text").innerText = dialogue[index];
